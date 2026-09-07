@@ -10,5 +10,5 @@ stateless vs stateful servers, and what sits between the client and your applica
 | # | Lab | Concept | Status |
 |---|-----|---------|--------|
 | 1 | [DNS Resolver](lab-01-dns-resolver/) | Domain to IP translation, caching, multiple IPs | ✅ Done |
-| 2 | Stateless vs Stateful Server | HTTP is stateless, sessions and tokens add state | ⬜ Next |
+| 2 | [Stateless vs Stateful Server](lab-02-stateful-vs-stateless/) | HTTP is stateless, sessions and tokens add state | ✅ Done |
 | 3 | Reverse Proxy with Filtering | What sits between client and server in production | ⬜ Not Started |
