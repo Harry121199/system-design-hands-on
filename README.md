@@ -7,7 +7,7 @@
 
 | Phase | Module | Topic | Status        |
 |-------|--------|-------|---------------|
-| 1 - Fundamentals | `module-01` | Networking & Protocols | 🔄 In Progress (Lab 3/4 done) |
+| 1 - Fundamentals | `module-01` | Networking & Protocols | ✅ Complete |
 | 1 - Fundamentals | `module-02` | How the Web Works | ⬜ Not Started |
 | 1 - Fundamentals | `module-03` | API Design (REST, gRPC, GraphQL) | ⬜ Not Started |
 | 2 - Data & Storage | `module-04` | Databases (SQL vs NoSQL) | ⬜ Not Started |
