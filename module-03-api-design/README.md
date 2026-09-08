@@ -11,5 +11,5 @@ and developer experience.
 | # | Lab | Concept | Status |
 |---|-----|---------|--------|
 | 1 | [REST API](lab-01-rest-api/) | Resource design, HTTP verbs, status codes, filtering | ✅ Done |
-| 2 | gRPC API | Binary protocol, Protobuf, code generation, streaming | ⬜ Next |
+| 2 | [gRPC API](lab-02-grpc-api/) | Binary protocol, Protobuf, code generation, type safety | ✅ Done |
 | 3 | Comparison benchmark | Payload size, latency, DX side by side | ⬜ Not Started |
