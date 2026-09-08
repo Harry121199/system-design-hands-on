@@ -9,7 +9,7 @@
 |-------|--------|-------|---------------|
 | 1 - Fundamentals | `module-01` | Networking & Protocols | ✅ Complete |
 | 1 - Fundamentals | `module-02` | How the Web Works | ✅ Complete |
-| 1 - Fundamentals | `module-03` | API Design (REST, gRPC, GraphQL) | 🔄 In Progress (Lab 2/3 done) |
+| 1 - Fundamentals | `module-03` | API Design (REST, gRPC, GraphQL) | ✅ Complete |
 | 2 - Data & Storage | `module-04` | Databases (SQL vs NoSQL) | ⬜ Not Started |
 | 2 - Data & Storage | `module-05` | Caching Strategies | ⬜ Not Started |
 | 2 - Data & Storage | `module-06` | Data Modeling | ⬜ Not Started |
