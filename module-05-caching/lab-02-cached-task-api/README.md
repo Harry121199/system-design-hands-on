@@ -29,3 +29,32 @@ cd lab-02-cached-task-api
 .\mvnw.cmd spring-boot:run
 curl -s http://localhost:8080/api/v1/benchmark
 ```
+
+
+## Lab 03 — Cache invalidation (added to this project)
+
+### Problem
+Cached data goes stale when the database is updated. Three strategies handle this
+differently, each trading freshness for speed.
+
+### Strategies implemented
+| Strategy | On write | Stale risk | Speed |
+|----------|----------|------------|-------|
+| Cache-aside | Evict from cache | One stale read after write | Fast |
+| Write-through | Update cache immediately | None | Medium |
+| TTL-based | Do nothing | Entire TTL window | Fastest |
+
+### What I learned
+- Cache-aside is the most common pattern — evict on write, lazy reload on next read
+- TTL is the simplest but guarantees stale reads within the TTL window
+- Write-through eliminates stale reads but makes writes slower (two operations)
+- Production systems combine cache-aside + TTL as a safety net
+- The core trade-off: fewer DB hits = faster but higher stale risk
+- There is no caching strategy with zero stale risk AND zero DB hits
+
+### Benchmark results
+| Strategy | DB hits | Time | Stale? |
+|----------|---------|------|--------|
+| No cache | 3 | 679ms | Never |
+| Cache-aside | 2 | 452ms | No |
+| TTL-based | 1 | 206ms | Yes |
