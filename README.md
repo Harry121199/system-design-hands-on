@@ -13,7 +13,7 @@
 | 2 - Data & Storage | `module-04` | Databases (SQL vs NoSQL) | ✅ Complete |
 | 2 - Data & Storage | `module-05` | Caching Strategies | ✅ Complete |
 | 2 - Data & Storage | `module-06` | Data Modeling | ✅ Complete |
-| 3 - Scalability | `module-07` | Load Balancing, CDN & Proxies | 1/3 In-Progress |
+| 3 - Scalability | `module-07` | Load Balancing, CDN & Proxies | 2/3 In-Progress |
 | 3 - Scalability | `module-08` | Sharding & Partitioning | ⬜ Not Started |
 | 4 - Distributed Systems | `module-09` | CAP, Consistency & Consensus | ⬜ Not Started |
 | 4 - Distributed Systems | `module-10` | Message Queues & Event-Driven | ⬜ Not Started |
