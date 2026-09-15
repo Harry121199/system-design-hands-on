@@ -43,6 +43,30 @@ public class ConsistentHashRing {
         return ring.size();
     }
 
+    public String getNodeSkipping(String key, Set<String> skipNodes) {
+        if (ring.isEmpty()) return null;
+        int hash = hash(key);
+
+        // Walk clockwise from the hash position
+        Map.Entry<Integer, String> entry = ring.ceilingEntry(hash);
+        if (entry == null) entry = ring.firstEntry();
+
+        // Keep walking until we find a healthy node or complete the ring
+        int startHash = entry.getKey();
+        boolean wrapped = false;
+
+        while (skipNodes.contains(entry.getValue())) {
+            entry = ring.higherEntry(entry.getKey());
+            if (entry == null) {
+                entry = ring.firstEntry();
+                wrapped = true;
+            }
+            if (wrapped && entry.getKey() >= startHash) {
+                return null;  // Full circle, no healthy node found
+            }
+        }
+        return entry.getValue();
+    }
     private int hash(String key) {
         byte[] data = key.getBytes();
         int seed = 0x9747b28c;
