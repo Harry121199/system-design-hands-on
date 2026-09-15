@@ -12,7 +12,7 @@
 | 1 - Fundamentals | `module-03` | API Design (REST, gRPC, GraphQL) | ✅ Complete |
 | 2 - Data & Storage | `module-04` | Databases (SQL vs NoSQL) | ✅ Complete |
 | 2 - Data & Storage | `module-05` | Caching Strategies | ✅ Complete |
-| 2 - Data & Storage | `module-06` | Data Modeling | ⬜ Not Started |
+| 2 - Data & Storage | `module-06` | Data Modeling | 2/3 In-Progress |
 | 3 - Scalability | `module-07` | Load Balancing, CDN & Proxies | ⬜ Not Started |
 | 3 - Scalability | `module-08` | Sharding & Partitioning | ⬜ Not Started |
 | 4 - Distributed Systems | `module-09` | CAP, Consistency & Consensus | ⬜ Not Started |
