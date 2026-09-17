@@ -1,7 +1,7 @@
 # Module 08 — Sharding & Partitioning
 
 ## Overview
-Split the Task API database across multiple shards using consistent hashing, with scatter-gather for cross-shard queries.
+Split the Task API database across multiple shards using consistent hashing, with scatter-gather for cross-shard queries and live rebalancing.
 
 ## Labs
 
@@ -15,4 +15,7 @@ Split the Task API database across multiple shards using consistent hashing, wit
 - Single-shard: 1ms, scatter-gather: 28ms (28x overhead)
 - Aggregations need client-side post-processing
 
-### Lab 03 — Rebalancing (upcoming)
+### Lab 03 — Rebalancing ✅
+- Added 4th shard dynamically, 28% of projects migrated (close to ideal 25%)
+- 14,000 tasks moved in 138ms with delete-after-write safety
+- Consistent hashing minimized disruption across all shards
